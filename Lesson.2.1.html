@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<title>
+	ЗАНЯТИЕ 2: PROTO
+	</title>
+	<meta http-equiv = "Content-Type" content = "text/html charset="utf-8">
+	<style>
+	div {position:absolute; width:50px; height:50px; backdround:#ccf}
+	</style>
+	<script type="text/javascript">
+	
+	var myHTML = {
+	string: "",
+	addText: function(str){
+	this.string += str;
+	return this;
+	},
+	addH: function(str, N){
+	this.string += '<h' + N + '>' + str + '</h' + N + '>';
+	return this;
+	},
+	showHTML: function() {return this.string}
+	}
+	myHTML.addText('Ученик ');
+	myHTML.addText('Фокина М.В.');
+	myHTML.addH('Урок №2', 2);
+	myHTML.showHTML();
+</script>
+</head>
+<body>
+"Ученик"
+"Фокина М.В."
+"Урок № 2"
+
+</body>
+</html>
